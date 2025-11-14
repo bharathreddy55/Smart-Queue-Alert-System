@@ -30,11 +30,11 @@ User → Google Colab Notebook → AWS S3 Bucket → AWS Rekognition
 ## -> Queue Alert Logic
 People Detected	Queue Status	Message
 
- • < 5	 -- Low	“Go grab your food 🍽️”
- 
- • 5–10 --	Moderate	“Just a little wait 🙂”
- 
- • > 10 --	Crowded	“Waiting makes the food tasty 😋”
+   • < 5	 -- Low	“Go grab your food 🍽️”
+   
+   • 5–10 --	Moderate	“Just a little wait 🙂”
+   
+   • > 10 --	Crowded	“Waiting makes the food tasty 😋”
 
 ## -> Technologies Used
 
