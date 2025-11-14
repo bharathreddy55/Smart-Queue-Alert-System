@@ -1,4 +1,5 @@
-### Smart-Queue-Alert-System
+
+## Smart-Queue-Canteen-Alert
 
 AWS Rekognition + Google Colab | Cloud + AI Integration
 
