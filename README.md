@@ -1,10 +1,10 @@
-## Smart-Queue-Alert-System
+### Smart-Queue-Alert-System
 
 AWS Rekognition + Google Colab | Cloud + AI Integration
 
 A fully cloud-based system that detects and counts people in canteen queue images using AWS Rekognition, classifies queue levels, and generates smart alerts — all within the AWS Free Tier using Google Colab.
 
-##🚀 Project Overview
+## 🚀 Project Overview
 
 Campus canteens often experience unpredictable queues that waste student time.
 This project solves that by using AI-powered person detection on uploaded queue images to estimate crowd size and display a real-time alert such as:
@@ -48,15 +48,15 @@ Programming Language	Python 3
 Libraries	boto3, opencv-python, matplotlib, pillow, numpy
 Optional UI	Gradio / Flask
 ## 🧱 Setup Instructions
-# 1️⃣ Clone this Repository
+1️⃣ Clone this Repository
 git clone https://github.com/<your-username>/smart-queue-alert.git
 cd smart-queue-alert
 
-# 2️⃣ Open in Google Colab
+ 2️⃣ Open in Google Colab
 
 Upload the notebook files or copy code blocks into a Colab notebook.
 
-# 3️⃣ Configure AWS Credentials
+ 3️⃣ Configure AWS Credentials
 
 Create an IAM user with these permissions:
 
@@ -68,7 +68,7 @@ s3:ListBucket
 
 Then enter your Access Key and Secret Key securely in Colab.
 
-# 4️⃣ Run Cells Sequentially
+ 4️⃣ Run Cells Sequentially
 
 Upload an image of the canteen queue
 
