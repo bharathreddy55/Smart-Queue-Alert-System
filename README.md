@@ -2,13 +2,13 @@
 
 A cloud-powered crowd detection tool using AWS Rekognition.
 
-## 📌 Project Description
+## -> Project Description
 
 This project automatically detects and counts the number of people in canteen queue images using AWS Rekognition. The system runs entirely through Google Colab, where users upload images that are stored in Amazon S3, analyzed by Rekognition, and returned with annotated bounding boxes and a queue alert message.
 
 The project helps estimate queue length without any physical sensors, making it affordable, serverless, and easily scalable within the AWS Free Tier.
 
-## ⚙️ Key Features
+## -> Key Features
 
 Automated person detection in uploaded images
 
@@ -22,18 +22,18 @@ Lightweight workflow implemented in Google Colab
 
 Optional accuracy & precision evaluation using latest S3 uploads
 
-##  Architecture
+## -> Architecture
 User → Google Colab Notebook → AWS S3 Bucket → AWS Rekognition
                                    ↓
                          Annotated Image + Queue Alert
 
-##  Queue Alert Logic
+## -> Queue Alert Logic
 People Detected	Queue Status	Message
 < 5	 -- Low	“Go grab your food 🍽️”
 5–10 --	Moderate	“Just a little wait 🙂”
 > 10 --	Crowded	“Waiting makes the food tasty 😋”
 
-##  Technologies Used
+## -> Technologies Used
 
 Python, Google Colab
 
@@ -41,7 +41,7 @@ AWS Rekognition, Amazon S3, AWS IAM , AWS CLI
 
 Libraries: boto3, pillow, numpy, opencv-python, matplotlib
 
-##  Workflow Summary
+## -> Workflow Summary
 
 User uploads an image in Google Colab
 
