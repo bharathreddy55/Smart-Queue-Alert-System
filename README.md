@@ -11,10 +11,15 @@ The project helps estimate queue length without any physical sensors, making it 
 ## -> Key Features
 
  • Automated person detection in uploaded images
+ 
  •  Accurate crowd counting using Rekognition
+ 
  •  Smart queue alerts: Low / Moderate / Crowded 
+ 
  • Annotated output images generated with bounding boxes
+ 
  •  Lightweight workflow implemented in Google Colab
+ 
  •  Optional accuracy & precision evaluation using latest S3 uploads
 
 ## -> Architecture
@@ -24,19 +29,27 @@ User → Google Colab Notebook → AWS S3 Bucket → AWS Rekognition
 
 ## -> Queue Alert Logic
 People Detected	Queue Status	Message
+
  • < 5	 -- Low	“Go grab your food 🍽️”
+ 
  • 5–10 --	Moderate	“Just a little wait 🙂”
+ 
  • > 10 --	Crowded	“Waiting makes the food tasty 😋”
 
 ## -> Technologies Used
 
  • Python, Google Colab
+ 
  • AWS Rekognition, Amazon S3, AWS IAM , AWS CLI
+ 
  • Libraries: boto3, pillow, numpy, opencv-python, matplotlib
 
 ## -> Workflow Summary
 
  • User uploads an image in Google Colab
+ 
  • Image is uploaded to S3
+ 
  • Rekognition analyzes and detects people
+ 
  • Results are returned to Colab
